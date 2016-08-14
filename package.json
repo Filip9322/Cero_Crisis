@@ -1,0 +1,17 @@
+{
+  "name": "pruebas",
+  "version": "1.0.0",
+  "description": "directorio para realizar la construccion de los componentes",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.8.1",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-stylus": "^2.2.0"
+  }
+}
