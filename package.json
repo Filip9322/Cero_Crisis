@@ -1,7 +1,7 @@
 {
-  "name": "pruebas",
+  "name": "Cero_Crisis_page",
   "version": "1.0.0",
-  "description": "directorio para realizar la construccion de los componentes",
+  "description": "Creacion de la pagina Web",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

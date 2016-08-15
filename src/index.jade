@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Cero Crisis Films
+  link(rel="stylesheet", href="css/main.css")
+
+body
+  //- portada
+  - var classes = ['portada background']
+  section(id=classes).portada
+  header(class='header contenedor')#header
+    //- logotipo
+    figure.logotipo
+      img(src='images/invie.png' alt="logo")
+    //menu
+    nav.menu
+      ul
+        li
+          a(class="menu__Home no-decoration" href="index.html")
+            p 0Crisis
+        li
+          a(class="menu_fotos no-decoration" href="index.html")
+            p Shoot
+        li
+          a(class="menu_Video no-decoration" href="index.html")
+            p A Rodar!
+        li
+          a(class="menu_equip no-decoration" href="index.html")
+            p Equipo
+  
+  footer
