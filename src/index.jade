@@ -46,23 +46,26 @@ body
   
   
 footer
-  .contenedor
+  div.contenedor__footer
     .legacy_group
       p.no-decoration  
         strong Cero Crisis Films es un grupo cultural universitario
       p.no-decoration  
         strong Sin animo de lucro
     .logotipo
-      img(src="images/Logo_blanco_2.png" alt='logo')
+      img(src="images/Logo_blanco_2.png" alt='logo' style="max-width: 200px;")
       
-    .contacto
+    div(class='contacto')
       a.no-decoration(href="tel:57344668728")
-        strong Telefono:
+        strong Telefono: 
         span 344668728
       a.no-decoration(href="mailto:contactoccfilms@0crisis.com")
-        strong E-mail:
+        strong E-mail: 
         span contatoccfilms@0crisis.com
-      div(class="contenedor redes")
-        img(src="images/twitter.png", alt="logo twitter")
-        img(src="images/facebook500.png", alt="logo facebook")
-        img(src="images/youtube.png", alt="logo youtube")
+      div(class="redes")
+        a(href="https://twitter.com/")
+          img(src="images/twitter.png", alt="logo twitter")
+        a(href="https://facebook.com/")
+          img(src="images/facebook500.png", alt="logo facebook")
+        a(href="https://youtube.com/")
+          img(src="images/youtube.png", alt="logo youtube")

@@ -184,6 +184,14 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+.contenedor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 body {
   background: #000;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -223,6 +231,8 @@ body {
   cursor: pointer;
 }
 .puntos_slider {
+  position: absolute;
+  bottom: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -233,24 +243,49 @@ body {
   padding: 3px;
 }
 footer {
+  width: 100%;
+  padding: 5px 20px;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid #add8e6;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: auto;
   font-size: 20px;
   font-style: italic;
   color: #fff;
-  display: inline-block;
 }
-footer .contenedor .logotipo img {
-  max-width: 200px;
-}
-.redes img {
-  width: 3.5%;
-  height: 3.5%;
-  padding: 3px;
-}
-.contenedor {
+.contenedor__footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contenedor__footer.logotipo img {
+  width: 200px;
+}
+.contacto {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 50px;
+}
+.contacto a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: #a0a0a0;
+}
+.redes a img {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
 }
