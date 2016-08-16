@@ -184,3 +184,19 @@ textarea {
   -webkit-appearance: button;
   font: inherit;
 }
+body {
+  background: #000;
+}
+.puntos_slider {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.puntos_slider img {
+  width: 1.5%;
+  height: 1.5%;
+}
+.redes img {
+  width: 2.5%;
+  height: 2.5%;
+}
