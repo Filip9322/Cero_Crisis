@@ -8,33 +8,39 @@
   <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-  <section id="portada background" class="portada"></section>
-  <header id="header" class="header contenedor">
-    <figure class="logotipo"><img src="images/invie.png" alt="logo"/></figure>
-    <!--menu-->
-    <nav class="menu">
-      <ul>
-        <li><a href="index.html" class="menu__Home no-decoration">
-            <p>0Crisis</p></a></li>
-        <li><a href="index.html" class="menu_fotos no-decoration">
-            <p>Shoot</p></a></li>
-        <li><a href="index.html" class="menu_Video no-decoration">
-            <p>A Rodar!</p></a></li>
-        <li><a href="index.html" class="menu_equip no-decoration">
-            <p>Equipo</p></a></li>
-      </ul>
-    </nav>
-  </header>
-  <footer>
-    <div class="contenedor">
-      <div class="legacy_group">
-        <p class="no-decoration"> <strong>Cero Crisis Films es un grupo cultural universitario</strong></p>
-        <p class="no-decoration"> <strong>Sin animo de lucro</strong></p>
-      </div>
-      <div class="logotipo"><img src="images/invie-white.png" alt="logo"/></div>
-      <div class="contacto"><a href="tel:57344668728" class="no-decoration"><strong>Telefono:</strong><span>344668728</span></a><a href="mailto:contactoccfilms@0crisis.com" class="no-decoration"><strong>E-mail:</strong><span>contatoccfilms@0crisis.com</span></a>
-        <div class="contenedor redes"><img src="images/twitter.png" alt="logo twitter"/><img src="images/facebook500.png" alt="logo facebook"/><img src="images/youtube.png" alt="logo youtube"/></div>
-      </div>
-    </div>
-  </footer>
+  <section class="portada">
+    <header id="header" class="header contenedor">
+      <figure class="logotipo"><img src="images/invie.png" alt="logo"/></figure>
+      <!--menu-->
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="menu__Home no-decoration">
+              <p>0Crisis</p></a></li>
+          <li><a href="index.html" class="menu_fotos no-decoration">
+              <p>Shoot</p></a></li>
+          <li><a href="index.html" class="menu_Video no-decoration">
+              <p>A Rodar!</p></a></li>
+          <li><a href="index.html" class="menu_equip no-decoration">
+              <p>Equipo</p></a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <section class="Thumbs-slider">
+    <div class="puntos_slider"><img src="images/empty_dot.png" alt="punto" onclick="cambiarImagen(this)" data="$#" class="dots"/><img src="images/empty_dot.png" alt="punto" onclick="cambiarImagen(this)" data="$#" class="dots"/><img src="images/empty_dot.png" alt="punto" onclick="cambiarImagen(this)" data="$#" class="dots"/><img src="images/empty_dot.png" alt="punto" onclick="cambiarImagen(this)" data="$#" class="dots"/></div>
+  </section>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="java.js"> </script>
 </body>
+<footer>
+  <div class="contenedor">
+    <div class="legacy_group">
+      <p class="no-decoration"> <strong>Cero Crisis Films es un grupo cultural universitario</strong></p>
+      <p class="no-decoration"> <strong>Sin animo de lucro</strong></p>
+    </div>
+    <div class="logotipo"><img src="images/invie-white.png" alt="logo"/></div>
+    <div class="contacto"><a href="tel:57344668728" class="no-decoration"><strong>Telefono:</strong><span>344668728</span></a><a href="mailto:contactoccfilms@0crisis.com" class="no-decoration"><strong>E-mail:</strong><span>contatoccfilms@0crisis.com</span></a>
+      <div class="contenedor redes"><img src="images/twitter.png" alt="logo twitter"/><img src="images/facebook500.png" alt="logo facebook"/><img src="images/youtube.png" alt="logo youtube"/></div>
+    </div>
+  </div>
+</footer>

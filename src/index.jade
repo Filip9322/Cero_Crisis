@@ -10,45 +10,56 @@ head
 body
   //- portada
   - var classes = ['portada background']
-  section(id=classes).portada
-  header(class='header contenedor')#header
-    //- logotipo
-    figure.logotipo
-      img(src='images/invie.png' alt="logo")
-    //menu
-    nav.menu
-      ul
-        li
-          a(class="menu__Home no-decoration" href="index.html")
-            p 0Crisis
-        li
-          a(class="menu_fotos no-decoration" href="index.html")
-            p Shoot
-        li
-          a(class="menu_Video no-decoration" href="index.html")
-            p A Rodar!
-        li
-          a(class="menu_equip no-decoration" href="index.html")
-            p Equipo
+  section(id=clases).portada
+    header(class='header contenedor')#header
+      //- logotipo
+      figure.logotipo
+        img(src='images/invie.png' alt="logo")
+      //menu
+      nav.menu
+        ul
+          li
+            a(class="menu__Home no-decoration" href="index.html")
+              p 0Crisis
+          li
+            a(class="menu_fotos no-decoration" href="index.html")
+              p Shoot
+          li
+            a(class="menu_Video no-decoration" href="index.html")
+              p A Rodar!
+          li
+            a(class="menu_equip no-decoration" href="index.html")
+              p Equipo
+  section.Thumbs-slider
+    div.puntos_slider
+      img(class='dots' src="images/empty_dot.png" alt='punto' onclick='cambiarImagen(this)' data='$#')
+      img(class='dots' src="images/empty_dot.png" alt='punto' onclick='cambiarImagen(this)' data='$#')
+      img(class='dots' src="images/empty_dot.png" alt='punto' onclick='cambiarImagen(this)' data='$#')
+      img(class='dots' src="images/empty_dot.png" alt='punto' onclick='cambiarImagen(this)' data='$#')
+
+  script(type='text/javascript' src='http://code.jquery.com/jquery-1.11.3.min.js')
+  script(type='text/javascript' src='java.js') 
+    
   
-  footer
-    .contenedor
-      .legacy_group
-        p.no-decoration  
-          strong Cero Crisis Films es un grupo cultural universitario
-        p.no-decoration  
-          strong Sin animo de lucro
-      .logotipo
-        img(src="images/invie-white.png" alt='logo')
-        
-      .contacto
-        a.no-decoration(href="tel:57344668728")
-          strong Telefono:
-          span 344668728
-        a.no-decoration(href="mailto:contactoccfilms@0crisis.com")
-          strong E-mail:
-          span contatoccfilms@0crisis.com
-        div(class="contenedor redes")
-          img(src="images/twitter.png", alt="logo twitter")
-          img(src="images/facebook500.png", alt="logo facebook")
-          img(src="images/youtube.png", alt="logo youtube")
+  
+footer
+  .contenedor
+    .legacy_group
+      p.no-decoration  
+        strong Cero Crisis Films es un grupo cultural universitario
+      p.no-decoration  
+        strong Sin animo de lucro
+    .logotipo
+      img(src="images/invie-white.png" alt='logo')
+      
+    .contacto
+      a.no-decoration(href="tel:57344668728")
+        strong Telefono:
+        span 344668728
+      a.no-decoration(href="mailto:contactoccfilms@0crisis.com")
+        strong E-mail:
+        span contatoccfilms@0crisis.com
+      div(class="contenedor redes")
+        img(src="images/twitter.png", alt="logo twitter")
+        img(src="images/facebook500.png", alt="logo facebook")
+        img(src="images/youtube.png", alt="logo youtube")
