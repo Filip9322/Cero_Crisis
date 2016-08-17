@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="es")
 head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -12,8 +12,7 @@ head
 
 body
   //- portada
-  - var classes = ['portada background']
-  section(id=clases).portada
+  section(id="portada background").portada
     header(class='header contenedor')#header
       //- logotipo
       figure.logotipo
@@ -33,6 +32,7 @@ body
           li
             a(class="menu_equip no-decoration" href="index.html")
               p Equipo
+                
   section.Thumbs-slider
     div.puntos_slider
       img(class='dots' src="images/empty_dot.png" alt='punto' onclick='cambiarImagen(this)' data='$#')
@@ -46,7 +46,7 @@ body
   
   
 footer
-  div.contenedor__footer
+  div(class="contenedor__footer" onclick="esconder_footer(this)" data='1' )
     .legacy_group
       p.no-decoration  
         strong Cero Crisis Films es un grupo cultural universitario

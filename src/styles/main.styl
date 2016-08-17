@@ -6,7 +6,15 @@
 
 body
   background: black
+  position: relative;
+  background-image: url('../images/3.jpg')
+  background-position: 0 0%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family:  'Open Sans Condensed', sans-serif;
+
+
 
 // Empieza
 // Header
@@ -15,6 +23,12 @@ body
   flex-direction: column;
   align-items: center;
   position: relative;
+
+.portada,.background
+
+  overflow: visible;
+  margin-bottom: auto;
+
 .header img
   max-width: 800px;
 .menu
@@ -35,15 +49,21 @@ body
       cursor: pointer;
     p:hover
       color: white
-//Body
-.puntos_slider
+.falso_footer
   position: absolute;
   bottom: 0
+//Body
+.puntos_slider
+  position: fixed;
+  bottom: 0
   display:flex;
+  cursor: pointer;
   img
     width: 1.5%
     height: 1.5%
     padding: 3px
+
+
 // Footer
 footer
   transition-property: transform
@@ -53,12 +73,13 @@ footer
   background: rgba(0,0,0,0.6);
   border: 2px solid lightblue;
   border-radius: 20px;
-  position: absolute;
+  position: fixed;
   bottom: 0
   left: auto;
   font-size: 20px;
-  font-style: italic;
+  // font-style: italic;
   color: white;
+  visibility: hidden;
 
 .contenedor__footer
   display: flex;
@@ -74,6 +95,7 @@ footer
   margin-right: 50px;
 
   a
+    font-style: italic;
     text-decoration: none;
     cursor: pointer;
     color: rgb(204 , 229, 255);

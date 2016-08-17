@@ -194,6 +194,12 @@ textarea {
 }
 body {
   background: #000;
+  position: relative;
+  background-image: url("../images/3.jpg");
+  background-position: 0 0%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 .header {
@@ -207,6 +213,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+.portada,
+.background {
+  overflow: visible;
+  margin-bottom: auto;
 }
 .header img {
   max-width: 800px;
@@ -233,12 +244,17 @@ body {
 .menu a p:hover {
   color: #fff;
 }
-.puntos_slider {
+.falso_footer {
   position: absolute;
+  bottom: 0;
+}
+.puntos_slider {
+  position: fixed;
   bottom: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 .puntos_slider img {
   width: 1.5%;
@@ -254,12 +270,12 @@ footer {
   background: rgba(0,0,0,0.6);
   border: 2px solid #add8e6;
   border-radius: 20px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: auto;
   font-size: 20px;
-  font-style: italic;
   color: #fff;
+  visibility: hidden;
 }
 .contenedor__footer {
   display: -webkit-flex;
@@ -285,6 +301,7 @@ footer {
   margin-right: 50px;
 }
 .contacto a {
+  font-style: italic;
   text-decoration: none;
   cursor: pointer;
   color: #cce5ff;
