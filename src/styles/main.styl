@@ -30,9 +30,11 @@ body
     text-decoration: none;
 
     p
-      color: white;
+      color: rgb(204 , 229, 255);
       font-size: 30px
       cursor: pointer;
+    p:hover
+      color: white
 //Body
 .puntos_slider
   position: absolute;
@@ -44,6 +46,8 @@ body
     padding: 3px
 // Footer
 footer
+  transition-property: transform
+  transition: width 3s;
   width: 100%
   padding: 5px 20px;
   background: rgba(0,0,0,0.6);
@@ -72,8 +76,11 @@ footer
   a
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: rgb(204 , 229, 255);
     text-shadow: rgb(160,160,160);
+
+  a:hover
+    color: white;
 
 .redes
   a
@@ -81,3 +88,12 @@ footer
       width:  40px;
       height: 40px;
       padding: 3px;
+
+footer:hover
+  background: rgba(0,0,0,0.8);
+  visibility: visible;
+footer:active
+  visibility: hidden;
+footer:target
+  visibility: hidden;
+  // http://tucual.com/
