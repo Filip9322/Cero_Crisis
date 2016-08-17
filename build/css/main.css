@@ -226,9 +226,12 @@ body {
   text-decoration: none;
 }
 .menu a p {
-  color: #fff;
+  color: #cce5ff;
   font-size: 30px;
   cursor: pointer;
+}
+.menu a p:hover {
+  color: #fff;
 }
 .puntos_slider {
   position: absolute;
@@ -243,6 +246,9 @@ body {
   padding: 3px;
 }
 footer {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition: width 3s;
   width: 100%;
   padding: 5px 20px;
   background: rgba(0,0,0,0.6);
@@ -281,11 +287,24 @@ footer {
 .contacto a {
   text-decoration: none;
   cursor: pointer;
-  color: #fff;
+  color: #cce5ff;
   text-shadow: #a0a0a0;
+}
+.contacto a:hover {
+  color: #fff;
 }
 .redes a img {
   width: 40px;
   height: 40px;
   padding: 3px;
+}
+footer:hover {
+  background: rgba(0,0,0,0.8);
+  visibility: visible;
+}
+footer:active {
+  visibility: hidden;
+}
+footer:target {
+  visibility: hidden;
 }
