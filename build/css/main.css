@@ -216,6 +216,7 @@ body {
 }
 .portada,
 .background {
+  background: rgba(0,0,0,0.3);
   overflow: visible;
   margin-bottom: auto;
 }
@@ -250,7 +251,8 @@ body {
 }
 .puntos_slider {
   position: fixed;
-  bottom: 0;
+  top: 0;
+  left: 1%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -259,7 +261,7 @@ body {
 .puntos_slider img {
   width: 1.5%;
   height: 1.5%;
-  padding: 3px;
+  padding: 5px;
 }
 footer {
   transition-property: -webkit-transform;
@@ -275,7 +277,6 @@ footer {
   left: auto;
   font-size: 20px;
   color: #fff;
-  visibility: hidden;
 }
 .contenedor__footer {
   display: -webkit-flex;
@@ -317,11 +318,10 @@ footer {
 }
 footer:hover {
   background: rgba(0,0,0,0.8);
-  visibility: visible;
 }
 footer:active {
   visibility: hidden;
 }
 footer:target {
-  visibility: hidden;
+  visibility: visible;
 }

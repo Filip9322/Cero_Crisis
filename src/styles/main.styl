@@ -25,7 +25,7 @@ body
   position: relative;
 
 .portada,.background
-
+  background: rgba(0,0,0,0.3);
   overflow: visible;
   margin-bottom: auto;
 
@@ -55,13 +55,14 @@ body
 //Body
 .puntos_slider
   position: fixed;
-  bottom: 0
+  top: 0
+  left: 1%
   display:flex;
   cursor: pointer;
   img
     width: 1.5%
     height: 1.5%
-    padding: 3px
+    padding: 5px
 
 
 // Footer
@@ -79,7 +80,6 @@ footer
   font-size: 20px;
   // font-style: italic;
   color: white;
-  visibility: hidden;
 
 .contenedor__footer
   display: flex;
@@ -113,9 +113,9 @@ footer
 
 footer:hover
   background: rgba(0,0,0,0.8);
-  visibility: visible;
 footer:active
   visibility: hidden;
+
 footer:target
-  visibility: hidden;
+  visibility:visible; ;
   // http://tucual.com/
