@@ -316,6 +316,10 @@ footer:target {
   visibility: visible;
 }
 @media screen and (max-width: 800px) {
+  body {
+    background-size: cover;
+    background-position: center center;
+  }
   .contenedor {
     width: auto;
     max-width: 800px;
@@ -347,7 +351,16 @@ footer:target {
     margin: 0;
   }
   footer {
-    visibility: hidden;
+    width: auto;
+    max-width: 800px;
+  }
+  .logotipo img {
+    width: 80%;
+  }
+  .contacto {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 @media screen and (max-width: 400px) {
@@ -385,5 +398,15 @@ footer:target {
   }
   .menu ul li a p {
     margin: 0;
+  }
+  footer {
+    width: auto;
+    max-width: 400px;
+  }
+  .legacy_group {
+    display: none;
+  }
+  .redes img {
+    display: none;
   }
 }
