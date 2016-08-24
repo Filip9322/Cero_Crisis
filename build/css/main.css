@@ -202,21 +202,10 @@ body {
   background-attachment: fixed;
   font-family: 'Open Sans Condensed', sans-serif;
 }
-.header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
+.header,
 .portada,
 .background {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.1);
   overflow: visible;
   margin-bottom: auto;
 }
@@ -224,14 +213,16 @@ body {
   max-width: 800px;
 }
 .menu {
+  padding-top: 30px;
   margin-top: 100px;
   max-width: 800px;
   display: inline-block;
   position: absolute;
 }
 .menu li {
+  height: 0px;
   display: inline-block;
-  padding: 20px;
+  padding: 0 20px;
   cursor: pointer;
 }
 .menu a {
@@ -245,9 +236,8 @@ body {
 .menu a p:hover {
   color: #fff;
 }
-.falso_footer {
-  position: absolute;
-  bottom: 0;
+.background-responsive {
+  visibility: hidden;
 }
 .puntos_slider {
   position: fixed;
@@ -324,4 +314,76 @@ footer:active {
 }
 footer:target {
   visibility: visible;
+}
+@media screen and (max-width: 800px) {
+  .contenedor {
+    width: auto;
+    max-width: 800px;
+  }
+  .header {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .header img {
+    width: 400px;
+  }
+  .menu {
+    margin-top: 0px;
+    position: relative;
+    top: -20px;
+  }
+  .menu ul {
+    margin: 0;
+  }
+  .menu ul li a p {
+    margin: 0;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contenedor {
+    width: auto;
+    max-width: 400px;
+  }
+  .header {
+    background: rgba(0,0,0,0.1);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .header img {
+    width: 250px;
+  }
+  .menu {
+    padding-top: 0px;
+    margin-top: 0;
+    position: relative;
+    top: -20px;
+  }
+  .menu ul {
+    margin: 0;
+  }
+  .menu li {
+    margin-top: 0px;
+  }
+  .menu ul li a p {
+    margin: 0;
+  }
 }
